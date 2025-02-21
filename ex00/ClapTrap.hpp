@@ -7,11 +7,11 @@ class ClapTrap
 	// •Name, which is passed as parameter to a constructor
 		std::string name;
 	// •Hit points (10), represent the health of the ClapTrap
-		int hitpoints;
+		unsigned int hitpoints;
 	// •Energy points (10)
-		int energy_points;
+		unsigned int energy_points;
 	// •Attack damage (0)
-		int attack_damage;
+		unsigned int attack_damage;
 	public:
 	// Add the following public member functions so the ClapTrap looks more realistic:
 	// •void attack(const std::string& target);
@@ -26,17 +26,9 @@ class ClapTrap
 	// Copy constructor
 	ClapTrap(const ClapTrap& other);
 	// Copy assignment operator:
-	ClatTrap& operator=(const ClapTrap& other);
+	ClapTrap& operator=(const ClapTrap& other);
 	// Destructor:
 	~ClapTrap();
-	// Setters:
-	void setHitpoints(int set_hitpoints);
-	void setEnergyPoints(int set_energy_points);
-	void setAttackDamage(int set_attack_damage);
-	// Getters:
-	int getHitpoints() const;
-	int getEnergyPoints() const;
-	int getAttackDamage() const;
-	
-	
+	// Debug:
+	void printStatus();	
 };
